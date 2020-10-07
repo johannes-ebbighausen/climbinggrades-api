@@ -3,7 +3,9 @@ val CirceVersion = "0.13.0"
 val Specs2Version = "4.10.0"
 val LogbackVersion = "1.2.3"
 
+
 lazy val root = (project in file("."))
+  .enablePlugins(JavaAppPackaging)
   .settings(
     organization := "de.vxr",
     name := "mountain-api",
